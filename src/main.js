@@ -35,6 +35,9 @@ const calcularChurrasco = () => {
     document.getElementById("total-bebidas-nao-alcoolicas").innerHTML = `${getValueMeasure(totalBebidasNaoAlcoolicas, 2)}`
     document.getElementById("total-bebidas-alcoolicas").innerHTML = `${getValueMeasure(totalBebidasAlcoolicas, 2)}`
 
+    const results = document.querySelector('#results')
+    if (results.classList.contains('d-none')) results.classList.remove('d-none')
+
 }
 
 
@@ -57,3 +60,9 @@ function getValueMeasure(val, type) {
 }
 
 botao.addEventListener("click", calcularChurrasco)
+
+// Checkbox
+document.querySelector('#checkbox').addEventListener('click', () => {
+    const checkbox = document.querySelector('input[type="checkbox"]')
+    checkbox.checked = !checkbox.checked
+})

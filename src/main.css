@@ -1,0 +1,94 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, .container {
+    height: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #731AB7;
+    color: #F7F0F0;
+}
+
+main {
+    background-color: rgba(10, 1, 1, .19);
+}
+
+h5 {
+    font-size: 26px;
+    letter-spacing: 0px;
+}
+
+h2 {
+    font: 86px 'Lobster', cursive;
+    text-shadow: 0px 3px 6px #636363;
+}
+
+h3 {
+    font: 40px 'Lobster', cursive;
+    letter-spacing: 0px;
+    color: #F7F0F0;
+    text-shadow: 0px 3px 6px #636363;
+    opacity: 1;
+}
+
+.calc-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.calc-item label {
+    order: 1;
+    margin-bottom: 0;
+    font-size: 15px;
+    text-align: center;
+}
+
+.calc-item input {
+    order: 0;
+    border: 5px solid #F7F7F7;
+    background-color: transparent;
+    color: inherit;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 31px;
+}
+
+.calc-item input[type="text"] {
+    margin-bottom: 9px;
+}
+
+.calc-item input[type="checkbox"] {
+    display: none;
+}
+
+#checkbox {
+    margin-right: 10px;
+    border: 3px solid #FFFFFF;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.calc-item input[type="checkbox"]:checked + #checkbox {
+    background-color: #fff;
+}
+
+#botaoCalcular {
+    background-color: #63DC3E;
+    border-radius: 5px;
+    padding: 20px 100px;
+    border: 0;
+    font-size: 30px;
+    color: #731AB7;
+}
+
+#results {
+    background-color: rgba(255, 255, 255, .43);
+    padding: 20px 45px;
+    font-weight: bold;
+}
